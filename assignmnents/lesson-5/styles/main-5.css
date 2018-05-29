@@ -1,0 +1,87 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; /* Declare the base font-family */
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 600px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+.logo {
+  position: absolute;
+  left: 0px;
+  width: 60px;  
+}
+.diamondvalley {
+  float: left;
+  margin: 0 0 1em 1em; 
+}
+
+header {
+    font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
+    
+}
+header h1 {
+  margin-left: 60px;
+    color: #F7B733;
+}
+header h2, strong {
+    position: relative;
+    top: -20px;
+  margin-left: 70px; 
+    color: #FC4A1A;
+    
+}
+header img {
+      
+}
+header .subheading {}
+.container {
+   position: relative;
+}
+
+nav {
+   top: -20px;
+    background: #F7B733;
+    margin: 0 0 1em;
+}
+nav button {}
+nav ul {}
+nav ul li {}
+nav ul li a {}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main {}
+main h2 {
+    
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { 
+
+}
+article {
+    border: 1em #DFDCE3;
+    
+}
+footer {
+    
+  margin: 0 auto; 
+    text-align: center;
+}
+.contact {
+    background: #F7B733;
+     margin: 0 0 1em;
+}
+.footer-bar {
+    background: #DFDCE3; 
+     margin: 0 0 1em;
+}
+
+ 
