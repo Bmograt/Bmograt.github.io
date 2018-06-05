@@ -1,0 +1,129 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;  /* Declare the base font-family */
+}
+
+header, main { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 600px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  
+}
+nav { display:none; } 
+nav, footer {
+    
+    max-width: 100%;
+     list-style-type: none;
+} 
+
+.logo {
+  position: absolute;
+  left: 0px;
+  width: 60px;  
+  margin: 0 0 1em 1em;  
+}
+.diamondvalley {
+  width: 100%;
+  height: auto;
+  margin: 0 0 1em 1em; 
+}
+
+header {
+    font-size: 16px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
+    margin: 0 0 1em 1em; 
+}
+header h1 {
+    margin-left: 60px;
+    color: #F7B733;
+}
+header h2, strong {
+     
+    position: relative;
+    top: -20px;
+    margin-left: 70px; 
+    color: #FC4A1A;
+    
+}
+h3, strong {
+     
+    margin-left:auto; 
+    color: #FC4A1A;
+    font-size: 25px;
+    
+}
+header img {
+      
+}
+header .subheading {
+    
+}
+.container {
+   position: relative;
+   padding: .75em;
+}
+
+nav {
+   top: -20px;
+    background: #F7B733;
+    margin: 0 0 1em;
+}
+nav button {}
+nav ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a { 
+    color: #DFDCE3;
+    text-decoration: none;
+}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main {
+    padding: 20 px;
+    margin: 0 0 1em 1em; 
+    text-align: center;
+}
+main h2 {
+    
+}
+main figure { 
+    margin: 0 0 .2rem 2%; width:96%; 
+}
+main figure img { 
+
+}
+section.forecast {
+    display: none;
+}
+article {
+    border: .2em solid #DFDCE3;
+    
+}
+footer {
+    
+  margin: 0 auto; 
+    text-align: center;
+    list-style-type: none;
+}
+.contact {
+    background: #F7B733;
+     margin: 0 0 1em;
+    list-style-type: none;
+    
+}
+.footer-bar {
+    background: #DFDCE3; 
+     margin: 0 0 1em;
+    padding: 15px;
+    
+}
+
