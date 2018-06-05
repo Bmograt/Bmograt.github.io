@@ -12,7 +12,7 @@ header, main { /* the comma between the selectors means apply the following CSS 
   max-width: 600px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
   
 }
-nav { display:none; } 
+ 
 nav, footer {
     
     max-width: 100%;
@@ -68,10 +68,17 @@ header .subheading {
 
 nav {
    top: -20px;
-    background: #F7B733;
+    background-color: #F7B733;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
     margin: 0 0 1em;
 }
-nav button {}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
 nav ul {
    list-style-type: none;
     margin: 0;
@@ -83,14 +90,18 @@ nav ul li {
 nav ul li a { 
     color: #DFDCE3;
     text-decoration: none;
+    display: block;
+    padding: .8rem 2%;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    
 }
 nav ul li.active a {
-    background-color: #000;
+    background-color: rgba(0,0,0,0.2);
     color: #fff;
 }
 nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
+    background-color: rgba(0,0,0,0.4);
+     
 }
 
 main {
@@ -135,3 +146,8 @@ footer {
     
 }
 
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}

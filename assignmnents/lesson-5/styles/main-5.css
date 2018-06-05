@@ -14,9 +14,8 @@ header, main { /* the comma between the selectors means apply the following CSS 
 }
 nav { display:none; } 
 nav, footer {
-    
     max-width: 100%;
-     list-style-type: none;
+      
 } 
 
 .logo {
@@ -68,10 +67,15 @@ header .subheading {
 
 nav {
    top: -20px;
-    background: #F7B733;
+    background-color: #F7B733;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
     margin: 0 0 1em;
 }
-nav button {}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+}
 nav ul {
    list-style-type: none;
     margin: 0;
