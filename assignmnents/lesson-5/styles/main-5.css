@@ -5,7 +5,7 @@
 
 body {
   font-size: 16px;
-  font-family: 'Lato', sans-serif;  /* Declare the base font-family */
+  font-family: Lato, sans-serif;  /* Declare the base font-family */
 }
 
 header, main { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */

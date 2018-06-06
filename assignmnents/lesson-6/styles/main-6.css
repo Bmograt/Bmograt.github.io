@@ -5,7 +5,7 @@
 
 body {
   font-size: 16px;
-  font-family: 'Lato', sans-serif;  /* Declare the base font-family */
+  font-family: Lato, sans-serif;  /* Declare the base font-family */
 }
 
 header, main { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
@@ -33,7 +33,7 @@ nav, footer {
 
 header {
     font-size: 16px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif; 
     margin: 0 0 1em 1em; 
 }
 header h1 {
@@ -100,9 +100,9 @@ nav ul li.active a {
     color: #fff;
 }
 nav ul li a:hover {
-    background-color: rgba(0,0,0,0.4);
-     
+    background-color: rgba(0,0,0,0.4);     
 }
+nav ul.hide  {display:none;}
 
 main {
     padding: 20 px;
@@ -130,8 +130,8 @@ article {
 footer {
     
   margin: 0 auto; 
-    text-align: center;
-    list-style-type: none;
+  text-align: center;
+  list-style-type: none;
 }
 .contact {
     background: #F7B733;
