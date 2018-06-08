@@ -9,15 +9,32 @@
     /* hamburger button does not need to be shown in the medium on up views */
     nav ul {
         margin-left: 2%;
+        border-left: 1px solid rgba(0,0,0,0.3);
     }
     
     nav ul li {
         float: left;
+        width:auto;
     }
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
-        padding: .8rem 1 rem;
+    }
+    section.forecast {display: block}
+    
+    article p.town-article img {
+        width: 60%;
+        float:right;
+    }
+    .weathersummary {
+        position: relative;
+        max-width: 
+    }
+    
+    .photofullwidth {
+        max-width: 46%;
+        height: 80%;
+        
     }
     
     

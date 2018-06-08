@@ -1,0 +1,48 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    nav button { 
+        display:none; 
+    } 
+    nav ul.hide {display:block;}
+    /* hamburger button does not need to be shown in the medium on up views */
+    nav ul {
+        margin-left: 2%;
+        border-left: 1px solid rgba(0,0,0,0.3);
+    }
+    
+    nav ul li {
+        float: left;
+        width:auto;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+    section.forecast {display: block}
+    
+    article p.town-article img {
+        width: 60%;
+        float:right;
+    }
+    .weathersummary {
+        position: relative;
+        max-width: 
+    }
+    
+    .photofullwidth {
+        max-width: 46%;
+        height: 80%;
+        
+    }
+    
+    
+    section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
+
+  
+
+ section.container { display: block; }  /* show the 10-day forecast with the medium view and up */
+
+   nav { display:block; } 
+  }

@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="styles/medium-6.css">
     <link rel="stylesheet" href="styles/large-6.css"> 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-    <script src="js/responsiveMenu.js" defer></script>
+    <script src="scripts/responsiveMenu.js" defer></script>
  </head>
   <body>
    <header>
-     <img src="images/weathericon.png" width="60" height="60" class="logo" alt="Weather Icon">  
+     <picture>
+     <img src="images/weathericon.png" width="60" height="60" class="logo" alt="Weather Icon"> 
+     </picture>
+     <div class="subheading">
      <h1>Sunny Days</h1>
-            <div class="subheading">
-            <h2>Your Local Source</h2>
-            </div>   
+     <h2>Your Local Source</h2>
+     </div>   
     
   </header>
 
@@ -26,11 +28,11 @@
       <button onclick="toggleNavMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
     	<li><a href="#">Home&nbsp;|</a></li>
-    	<li><a href="#">Franklin&nbsp;|</a></li>
+    	<li class="active"><a href="franklin-7.html">Franklin&nbsp;|</a></li>
     	<li><a href="#">Greenville&nbsp;|</a></li>
     	<li><a href="#">Springfield &nbsp;|</a></li>
     	<li><a href="#">Storm Center&nbsp;|</a></li>
-    	<li><a href="#">Gallery&nbsp;|</a></li>
+    	<li><a href="gallery-7.html">Gallery&nbsp;|</a></li>
     </ul>		
   </nav>
        
@@ -93,8 +95,8 @@
       
     <article>
       <h3>Diamond Valley Breaks Record</h3>	
-      <img src="">
-      <p class="town-article">
+      
+      <p class="town-article"><img src="">
           Diamond Valley recieves 3 inches of snow in rare event. Snow plows are unresponsive. Home owners make due with four wheel drive. 
       </p>
     </article>		  
@@ -114,6 +116,7 @@
     <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
     </section>
   </footer>
+  <script src="scripts/currentdate.js"></script>
 
 </body>
 </html>

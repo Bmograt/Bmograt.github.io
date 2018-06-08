@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <head> 
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather Page | Brad Simmons | BYU-Idaho</title> 
+    <meta name="description" content="Franklin Weather page for Brad Simmons in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-7.css">
+    <link rel="stylesheet" href="styles/medium-7.css">
+    <link rel="stylesheet" href="styles/large-7.css"> 
+     
+    <script src="scripts/responsiveMenu.js" defer></script>
+ </head>
+  <body>
+   <header>
+     <picture>
+     <img src="images/weathericon.png" width="60" height="60" class="logo" alt="Weather Icon"> 
+     </picture>
+     <div class="subheading">
+     <h1>Sunny Days</h1>
+     <h2>Your Local Source</h2>
+     </div>   
+    
+  </header>
+
+  <nav class="clearfix"> 
+      <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="#">Home&nbsp;|</a></li>
+    	<li class="active"><a href="franklin-7.html">Franklin&nbsp;|</a></li>
+    	<li><a href="#">Greenville&nbsp;|</a></li>
+    	<li><a href="#">Springfield &nbsp;|</a></li>
+    	<li><a href="#">Storm Center&nbsp;|</a></li>
+    	<li><a href="gallery-7.html">Gallery&nbsp;|</a></li>
+    </ul>		
+  </nav>
+       
+  <main>
+    <br>
+    <h3>Diamond Valley</h3>
+    <figure class="photofullwidth">
+    <img src="images/franklin-l.jpg" alt="mountain sun" sizes="100vw" srcset="images/franklin-s.jpg 600w,images/franklin-m.jpg 800w,images/franklin-l.jpg 1200w"> 
+    </figure>
+    <section class="weather-summary">
+      <h4>Weather Summary</h4>    
+      <div class="highlow">
+        <p>High: 90 deg &#160;&#160; Low: 66 deg</p>  
+      </div>
+      <div class="current">
+        Sunny
+        <picture>
+            <img src="images/sun.png" alt="sun" width="75" hight="75">
+        </picture>
+      </div>   
+      <div class="conditions">
+        <p>Precipitation: 0%</p>  
+        <p>Wind Speed: 5 mph SW</p>  
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Diamond Valley Breaks Record</h3>	
+      
+      <p class="town-article"><img src="">
+          Diamond Valley recieves 3 inches of snow in rare event. Snow plows are unresponsive. Home owners make due with four wheel drive. 
+      </p>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+        <ul style="list-style-type:none">
+      <li>Contact information placeholder</li>
+      <li>999.999.9999</li>
+      <li>123 Main St.</li> 
+      <li>Anytown, US 99999</li>
+      <li>Google Map</li>
+        </ul>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
+    </section>
+  </footer>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>
