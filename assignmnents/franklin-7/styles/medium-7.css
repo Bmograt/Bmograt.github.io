@@ -5,11 +5,14 @@
     nav button { 
         display:none; 
     } 
-    nav ul.hide {display:block;}
+    nav ul.hide {
+    display:flex;
+    }
     /* hamburger button does not need to be shown in the medium on up views */
     nav ul {
         margin-left: 2%;
         border-left: 1px solid rgba(0,0,0,0.3);
+        flex-wrap: nowrap;
     }
     
     nav ul li {
@@ -17,32 +20,23 @@
         width:auto;
     }
     nav ul li a {
-        border: none;
-        border-right: 1px solid rgba(0,0,0,0.3);
+         border-right: 1px solid rgba(0,0,0,0.3);
+         border-bottom: none;
     }
-    section.forecast {display: block}
-    
+     
+    section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
+
     article p.town-article img {
         width: 60%;
         float:right;
-    }
-    .weathersummary {
-        position: relative;
-        max-width: 
-    }
+    } 
+     
     
-    .photofullwidth {
-        max-width: 46%;
-        height: 80%;
-        
+    div.weatherGallery {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
     }
     
     
-    section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
-
-  
-
- section.container { display: block; }  /* show the 10-day forecast with the medium view and up */
-
-   nav { display:block; } 
-  }
+   
+}

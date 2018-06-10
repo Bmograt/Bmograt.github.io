@@ -1,11 +1,12 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { margin: 0;
+    box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   margin: 2%;
   padding: 0;
-  max-width: 100%;
+  max-width: 94%;
   max-height: 100%;
   text-align: center;
   font-size: 16px;
@@ -20,11 +21,8 @@ header, main, nav , footer { /* the comma between the selectors means apply the 
   padding: 0rem
 }
  
-header, footer {
-    margin: 0.2rem;
-    
-     
-      
+header, footer, footer a {
+    margin: 0.2rem;    
 } 
 
 .logo {
@@ -33,6 +31,14 @@ header, footer {
   width: 60px;  
   margin: 0 0 1em 1em;  
 }
+
+header .subheading {
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    
+}
+
 .diamondvalley {
   width: 100%;
   height: auto;
@@ -48,6 +54,7 @@ header {
 header h1 {
     margin-left: 60px;
     color: #F7B733;
+    font-size: 2.0rem;
 }
 header h2, strong {
      
@@ -61,47 +68,39 @@ h3, strong {
      
     margin-left:auto; 
     color: #FC4A1A;
-    font-size: 25px;
-    
-}
-header img {
-    width: 200px;
-    float: center;
-      
-}
-header .subheading {
-    
-}
-.container {
-   position: relative;
-   padding: .75em;
+    font-size: 25px;      
 }
 
 nav {
-    top: -20px;
+    
     background-color: #F7B733;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
-    margin: 0 0 1em;
 }
 nav button {
+    display: block;
+    position:absolute;
     margin: .2rem 2%;
-    background-color: transparent;
+    background-color: #F7B733;
     border: none;
     font-size: 1.6rem;
     color: #555;
 }
 nav ul {
-   list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 nav ul li {
-  display: inline;
+    background-color: #F7B733; 
+    flex-basis: 100%;
+    list-style: none;
 }
 nav ul li a { 
+    display: block;
     color: #DFDCE3;
     text-decoration: none;
-    display: block;
     padding: .8rem 2%;
     border-top: 1px solid rgba(0,0,0,0.3);
     text-align: left;
@@ -114,21 +113,25 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: rgba(0,0,0,0.4);     
 }
-nav ul.hide  {display:none;}
+nav ul.show {
+    display:flex;
+}
+nav ul.hide  {
+    display:none;
+}
 
 main {
     padding: 20 px;
     margin: 0 0 1em 1em; 
     text-align: center;
 }
-main h2 {
+main figure {
+    margin: 0 0 .2rem 2%;
     
 }
-main figure.photofullwidth{ 
-    margin: 0 0 .2rem 2%; 
-    width:96%; 
+ 
 }
-main figure.photofullwidth img{ 
+main figure img{ 
     width: 100%;
     }
 section.weather-summary {
@@ -145,8 +148,29 @@ article {
     margin-top: 1.0rem;
     
 }
+
+.windchill {margin: 1rem;}
+.form {background-color:#bbb; padding: 1rem; border:1px solid #444;}
+div {background-color:#eee; padding: 1rem; border:1px solid #444;}
+#aNum {border:1px solid #bbeedd; background-color:#F7B733; text-align:center;}
+
+div.weatherGallery{
+        padding: 0 2%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+div.weatherGallery figure {
+    margin: 2rem 0;
+    border: 1px solid #aaa;
+}
+div.weatherGallery figure img {
+    width: 100%;
+}
+div.weatherGallery figure figcaption {
+    text-align: center;
+    font-size: 1.0rem;
+}
 footer {
-    
   margin: 0 auto; 
   text-align: center;
   list-style-type: none;

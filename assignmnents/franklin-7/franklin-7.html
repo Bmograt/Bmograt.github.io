@@ -18,6 +18,7 @@
      <picture>
      <img src="images/weathericon.png" width="60" height="60" class="logo" alt="Weather Icon"> 
      </picture>
+       
      <div class="subheading">
      <h1>Sunny Days</h1>
      <h2>Your Local Source</h2>
@@ -28,7 +29,7 @@
   <nav class="clearfix"> 
       <button onclick="toggleNavMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
-    	<li><a href="#">Home&nbsp;|</a></li>
+    	<li><a href="/index.html">Home&nbsp;|</a></li>
     	<li class="active"><a href="franklin-7.html">Franklin&nbsp;|</a></li>
     	<li><a href="#">Greenville&nbsp;|</a></li>
     	<li><a href="#">Springfield &nbsp;|</a></li>
@@ -41,7 +42,7 @@
     <br>
     <h3>Diamond Valley</h3>
     <figure class="photofullwidth">
-    <img src="images/franklin-l.jpg" alt="mountain sun" sizes="100vw" srcset="images/franklin-s.jpg 600w,images/franklin-m.jpg 800w,images/franklin-l.jpg 1200w"> 
+    <img src="images/franklin-l.jpg" alt="Landscape" sizes="100vw" srcset="images/franklin-s.jpg 600w,images/franklin-m.jpg 800w,images/franklin-l.jpg 1200w"> 
     </figure>
     <section class="weather-summary">
       <h4>Weather Summary</h4>    
@@ -59,6 +60,15 @@
         <p>Wind Speed: 5 mph SW</p>  
       </div>           
     </section>
+    <section>
+	<div class="windchill">
+	Enter the high temp: <input type="text" id="high" maxlength="3" size="1">
+    Enter the low temp: <input type="text" id="low" maxlength="3" size="1">    Enter the wind speed: <input type="text" id="windspeed" maxlength="3" size="1">   
+	<input type="submit" onclick="computeNum()" value="Run Calculation">
+    <div id="output">Output Placeholder</div>
+	</div>
+</section> 
+      <script src="scripts/windchill.js"></script>
         
     <section class="forecast">
       <h3>Ten Day Forecast</h3>
@@ -97,7 +107,7 @@
     <article>
       <h3>Diamond Valley Breaks Record</h3>	
       
-      <p class="town-article"><img src="">
+      <p class="town-article"><img src="images/weather-4.jpeg" alt= "Diamond View">
           Diamond Valley recieves 3 inches of snow in rare event. Snow plows are unresponsive. Home owners make due with four wheel drive. 
       </p>
     </article>		  
@@ -107,10 +117,10 @@
   <footer>
     <section class="contact">
         <ul style="list-style-type:none">
-      <li>Contact information placeholder</li>
+      <li>Sunny Days</li>
       <li>999.999.9999</li>
       <li>123 Main St.</li> 
-      <li>Anytown, US 99999</li>
+      <li>Diamond Valley, UT 84770</li>
       <li>Google Map</li>
         </ul>
     </section>

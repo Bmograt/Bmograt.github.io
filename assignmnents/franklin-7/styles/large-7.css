@@ -1,24 +1,13 @@
 @media only screen and (min-width: 64em ) {
     
-    nav button { 
-        display:none; 
-    } 
-    nav ul.hide {display:block;}
-    /* hamburger button does not need to be shown in the medium on up views */
-    nav ul {
-        margin-left: 2%;
+    article p.town-article img {
+        width: 30%}
+    
+    div.weatherGallery  {
+        grid-template-columns: 1fr 1fr 1fr;
     }
     
-    nav ul li {
-        float: left;
+    div.weather-Gallery figure: hover{
+        box-shadow: 5px 10px 15px violet;
     }
-    nav ul li a {
-        border: none;
-        border-right: 1px solid rgba(0,0,0,0.3);
-        padding: .6rem 1 rem;
-    }
-    
-    
-    
-  
 }
