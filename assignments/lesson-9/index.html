@@ -1,107 +1,75 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="Fill Me In">
-<meta name="author" content="John Doe">
-
-<!-- This start file was build by Paul Cheney  -->
-<title>HTML5 Start Site by Paul Cheney</title>
-
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-
-
-<!-- STYLE SHEETS -->
-<link href="styles/normalize-1.css" rel="stylesheet">
-<!-- phone-default -->
-<link href="styles/small.css" rel="stylesheet">
-<!-- enhance-tablet -->
-<link href="styles/medium.css" rel="stylesheet">
-<!-- enhance-desktop -->
-<link href="styles/large.css" rel="stylesheet">
-
-
+<!DOCTYPE html>
+<html lang="en-us">
+ <head> 
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Weather Channel</title> 
+    <meta name="description" content="Franklin Weather page for Brad Simmons in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-7.css">
+    <link rel="stylesheet" href="styles/medium-7.css">
+    <link rel="stylesheet" href="styles/large-7.css"> 
      
-</head>
-<body>
-<!-- HEADER HERE -->
-	<header>
- <h1>Course Proposal</h1>
-        <h2>Designing Web Forms</h2>
-    </header>
+    <script src="scripts/responsiveMenu.js" defer></script>
+ </head>
+  <body>
+   <header>
+     <picture>
+     <img src="images/weathericon.png" width="60" height="60" class="logo" alt="Weather Icon"> 
+     </picture>
+       
+     <div class="subheading">
+     <h1>Sunny Days</h1>
+     <h2>Your Local Source</h2>
+     </div>   
     
-    
-<!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <ul >
-            <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
-            <li><a href="#">Winners</a></li>
-            <li><a href="#">Contact</a></li>    
-        </ul>
-    </nav>
-    
-    
-<!-- CONTENT HERE -->
-<main>
-    <h1>Course Proposal Application</h1>
-     <form method="get" action="thanks.html">
-         <fieldset>
-         <legend> Applicant Information</legend>
-         <label class="top">First Name*:<input type="text"  name="fname" required></label>
-         <label class="top">Last Name*:<input type="text"  name="lname" required></label> 
-         <label class="top">Phone:<input type="tel"  name="phone" placeholder="1235551234"></label>    
-         <label class="top">Email*:<input type="email"  name="email" placeholder="someone@gmail.com" required></label> 
-         <label class="top">Website:<input type="url"  name="url" placeholder="http://"></label>      
-         </fieldset>
-         
-         <fieldset>
-         <legend>Course Information</legend>
-         <div>Audience</div>
-         <label class="sbs"><input type="radio" name="audience"  value="beginner">Beginner</label>
-         <label class="sbs"><input type="radio" name="audience"  value="intermediate">Imtermediate</label>
-         <label class="sbs"><input type="radio" name="audience"  value="Advanced">Advanced</label>
-             
-        <div>Software Needed</div>
-          <label class="sbs"><input type="checkbox" name="editing"  value="yes">Photo Editing</label>   
-         <label class="sbs"><input type="checkbox" name="code"  value="yes">Coding</label>  
-          <label class="sbs"><input type="checkbox" name="process"  value="yes">Preprocessor</label>                
-          <label class="sbs"><input type="checkbox" name="client"  value="yes">FTP Client</label>    
-         </fieldset>
-         
-         <fieldset>
-         <legend>Funding</legend>
-             <label class="top">Anticipated Completion Date<input type="date"  name="completedDate"></label>
-             <label class="top">Course Subject
-             <select name="subject">
-                 <option value="">Please Select &#9662;</option>
-                 <option value="software">Software Development</option>
-                 <option value="software">Creative Professionalism</option>
-                 <option value="software">Information Technology</option>
-                 <option value="software">Data Professional</option>
-                 </select>
-             </label>
-         
-             <label class="top">How Many Authors <input type="number"  name="authors"></label>
-         </fieldset>
-        
-         <input type="submit" value = "Propose My Course" class="submitBtn">
-    
-    
-    
-    </form>   
+  </header>
 
-          
-        
-    </main>
+  <nav class="clearfix"> 
+      <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="active"><a href="index.html">Home&nbsp;|</a></li>
+    	<li><a href="franklin-7.html">Franklin&nbsp;|</a></li>
+    	<li><a href="#">Greenville&nbsp;|</a></li>
+    	<li><a href="#">Springfield &nbsp;|</a></li>
+    	<li><a href="stormcenter.html">Storm Center&nbsp;|</a></li>
+    	<li><a href="gallery-7.html">Gallery&nbsp;|</a></li>
+    </ul>		
+  </nav>
+       
+  <main>
+    <br>
+    <h3>Diamond Valley</h3>
+    <figure class="photofullwidth">
+    <img src="images/franklin-l.jpg" alt="Landscape" sizes="100vw" srcset="images/franklin-s.jpg 600w,images/franklin-m.jpg 800w,images/franklin-l.jpg 1200w"> 
+    </figure>
+    <section class="cityfacts">
     
-<!-- FOOTER HERE -->   
-    <footer>
-        &copy; 2018 &bull; Paul Cheney &bull; 123-555-6789
-    </footer>
-<script src="js/scripts.js"></script>
+    </section>
+      
+      <script src="scripts/loadjson.js" defer></script>
+    
+      <p id="return-link"><a href="../index.html">Return To Portal</a></p>
+      
+    	  
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+        <ul style="list-style-type:none">
+      <li>Sunny Days</li>
+      <li>999.999.9999</li>
+      <li>123 Main St.</li> 
+      <li>Diamond Valley, UT 84770</li>
+      <li>Google Map</li>
+        </ul>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
+    </section>
+  </footer>
+  <script src="scripts/currentdate.js"></script>
+
 </body>
 </html>
