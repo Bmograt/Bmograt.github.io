@@ -4,7 +4,7 @@
     box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  margin: 2%;
+  margin: 3%;
   padding: 0;
   max-width: 94%;
   max-height: 100%;
@@ -121,6 +121,7 @@ nav ul.hide  {
 }
 
 main {
+    display: block;
     padding: 20 px;
     margin: 0 0 1em 1em; 
     text-align: center;
@@ -228,6 +229,18 @@ form label.top input: required {
 
 form label.top inpup:required:valid {
     border-left: green solid 6px;
+}
+
+
+section.cityfacts {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0 2%;
+    
+}
+section.cityfacts ul {
+    list-style-type: none;
+    
 }
 
 
