@@ -35,7 +35,7 @@ function showCitydata(jsonObj) {
         
         var cityEvents = cities[i].events;
         for (var j = 0; j < cityEvents.length; j++) {
-            varlistItem = docuement.createElement('li');
+            varlistItem = document.createElement('li');
             varlistItem.textContent = cityEvents[j];
             myList.appendChild(varlistItem);
         }

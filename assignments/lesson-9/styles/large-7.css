@@ -10,4 +10,11 @@
     div.weather-Gallery figure: hover{
         box-shadow: 5px 10px 15px violet;
     }
+    
+    section.cityfacts {
+    grid-template-columns: 1fr 1fr 1fr;    
+        
+    padding: 0 2%;
+    
+}
 }
