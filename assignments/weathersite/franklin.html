@@ -1,0 +1,160 @@
+<!DOCTYPE html>  
+<html lang="en-us">
+ <head> 
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather Page | Brad Simmons | BYU-Idaho</title> 
+    <meta name="description" content="Franklin Weather page for Brad Simmons in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-10.css">
+    <link rel="stylesheet" href="styles/medium-10.css">
+    <link rel="stylesheet" href="styles/large-10.css"> 
+     
+    <script src="scripts/responsiveMenu.js" defer></script>
+ </head>
+  <body>
+   <header>
+     <picture>
+     <img src="images/weathericon.png" width="60" height="60" class="logo" alt="Weather Icon"> 
+     </picture>
+       
+     <div class="subheading">
+     <h1>Sunny Days</h1>
+     <h2>Your Local Source</h2>
+     </div>   
+    
+  </header>
+
+  <nav class="clearfix"> 
+      <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="mainmenu" class="hide">
+    	<li><a href="index.html">Home&nbsp;|</a></li>
+    	<li><a href="franklin.html">Franklin&nbsp;|</a></li>
+    	<li><a href="greenville.html">Greenville&nbsp;|</a></li>
+    	<li><a href="springfield.html">Springfield &nbsp;|</a></li>
+    	<li><a href="stormcenter.html">Storm Center&nbsp;|</a></li>
+    	<li><a href="gallery.html">Gallery&nbsp;|</a></li>
+    </ul>		
+  </nav>
+       
+  <main>
+    <br>
+    <h3>Franklin</h3>
+    <figure class="photofullwidth">
+    <img src="images/franklin-l.jpg" alt="Landscape" sizes="100vw" srcset="images/franklin-s.jpg 600w,images/franklin-m.jpg 800w,images/franklin-l.jpg 1200w"> 
+    </figure>
+      
+      <h1>Forecast</h1>
+      <h2>Weather Conditions for <span id="place">city</span></h2>
+       
+      
+    <section class="weather-summary">
+      <h4>Weather Summary</h4>    
+      <div class="highlow">
+          <p>High:<span id="maxTemp"> </span>&#160;F &#160;&#160; Low: <span id="minTemp"> </span>&#160;F</p>  
+      </div>
+      <div class="current">
+        <h3>Current Weather</h3>
+        <p><span id="currentTemp"> </span>&#160;F</p>
+        <p><span id="description"> </span></p> 
+        <picture>
+            <img id='weather_icon' src="images/sun.png" alt="sun" width="75" hight="75">
+        </picture>
+      </div>   
+      <div class="conditions">
+          
+        <p>Wind Speed: <span id="currentWind"> </span>&#160;mph</p>  
+      </div>           
+    </section>
+    <section>
+	<div class="windchill">
+	Enter the high temp: <input type="text" id="high" maxlength="3" size="1">
+    Enter the low temp: <input type="text" id="low" maxlength="3" size="1">    Enter the wind speed: <input type="text" id="windspeed" maxlength="3" size="1">   
+	<input type="submit" onclick="computeNum()" value="Run Calculation">
+    <div id="output">Output Placeholder</div>
+	</div>
+</section> 
+      <script src="scripts/windchill.js"></script>
+        
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Diamond Valley Breaks Record</h3>	
+      
+      <p class="town-article"><img src="images/weather-4.jpeg" alt= "Diamond View">
+          Diamond Valley recieves 3 inches of snow in rare event. Snow plows are unresponsive. Home owners make due with four wheel drive. 
+      </p>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+        <ul style="list-style-type:none">
+      <li>Sunny Days</li>
+      <li>435.592.3899</li>
+      <li>123 Main St.</li> 
+      <li>Diamond Valley, UT 84770</li>
+      <li>Google Map</li>
+        </ul>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Sunny Days | <span id="currentdate">Current Date Placeholder</span>
+    </section>
+  </footer>
+  <script src="scripts/franklin.js"></script>    
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+ <script>
+//remember to add an ID of "mainmenu" to the nav ul
+var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF=urlArray[urlArray.length-1];
+    
+    if(pageHREF !=="") {
+        var menu = document.querySelectorAll('ul#mainmenu li a');
+        var i;
+        
+        for(i=0; i<menu.length; i++) {
+            var currentURL=(menu[i].getAttribute("href"));
+            menu[i].parentNode.className="";
+            if (currentURL===pageHREF) {
+              menu[i].parentNode.className="active";  
+                }       
+        }
+    }
+    </script>       
+</html>

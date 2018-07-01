@@ -120,6 +120,9 @@ nav ul.hide  {
     display:none;
 }
 
+nav ul li.active a {background: linear-gradient(#147429 0%, #1a9835 100%); }
+     
+}
 main {
     display: block;
     padding: 20 px;

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <head> 
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storm Center</title> 
+    <meta name="description" content="Storm Center Form">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-10.css">
+    <link rel="stylesheet" href="styles/medium-10.css">
+    <link rel="stylesheet" href="styles/large-10.css"> 
+     
+    <script src="scripts/responsiveMenu.js" defer></script>
+ </head>
+  <body>
+   <header>
+     <picture>
+     <img src="images/weathericon.png" width="60" height="60" class="logo" alt="Weather Icon"> 
+     </picture>
+     <div class="subheading">
+     <h1>Sunny Days</h1>
+     <h2>Your Local Source</h2>
+     </div>   
+    
+  </header>
+
+  <nav class="clearfix"> 
+      <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="mainmenu" class="hide">
+    	<li><a href="index.html">Home&nbsp;|</a></li>
+    	<li><a href="franklin.html">Franklin&nbsp;|</a></li>
+    	<li><a href="greenville.html">Greenville&nbsp;|</a></li>
+    	<li><a href="springfield.html">Springfield &nbsp;|</a></li>
+    	<li><a href="stormcenter.html">Storm Center&nbsp;|</a></li>
+    	<li><a href="gallery.html">Gallery&nbsp;|</a></li>
+    </ul>		
+  </nav>
+       
+  <main>
+    <br>
+    <h1>Storm Center</h1>
+    <div class="stormCenter">  
+        
+    <form method="get" action="thanks.html">
+         <fieldset>
+         <legend> Your Information</legend>
+         <label class="top">First Name*:<input type="text"  name="fname" required></label>
+         <label class="top">Last Name*:<input type="text"  name="lname" required></label> 
+         <label class="top">Phone:<input type="tel"  name="phone" placeholder="1235551234"></label>    
+         <label class="top">Email*:<input type="email"  name="email" placeholder="someone@gmail.com" required></label> 
+         <label class="top">Zipcode:<input type="zip"  name="zip" placeholder="84777"></label>  
+        <label class="top">Storm Date:<input type="date"  name="completedDate" placeholder="08/10/2018"></label>      
+         </fieldset>
+         
+         <fieldset>
+         <legend>Storm Type</legend>
+         
+         <label class="sbs"><input type="radio" name="audience"  value="Flashflood">Flash Flood</label>
+         <label class="sbs"><input type="radio" name="audience"  value="hail">Hail</label>
+         <label class="sbs"><input type="radio" name="audience"  value="hurricane">Hurricane</label>
+          <label class="sbs"><input type="radio" name="audience"  value="thunderstorm">Thunderstorm</label> 
+         <label class="sbs"><input type="radio" name="audience"  value="Tornado">Tornado</label>
+             
+        
+             
+         
+         </fieldset>
+         
+         <fieldset>
+         <legend>Severity</legend>
+             
+             <label class="top">Storm Severity
+             <select name="subject">
+                 <option value="">Please Select &#9662;</option>
+                 <option value="severity">1</option>
+                 <option value="severity">2</option>
+                 <option value="severity">3</option>
+                 <option value="severity">4</option>
+                 <option value="severity">5</option>
+                 <option value="severity">6</option>
+                 <option value="severity">7</option>
+                 <option value="severity">8</option>
+                 <option value="severity">9</option>
+                 <option value="severity">10</option>
+                 </select>
+             </label>
+             
+              <label class="top">Storm Region
+             <select name="subject">
+                 <option value="">Please Select &#9662;</option>
+                 <option value="region">Diamond Valley</option>
+                 <option value="region">Winchester Hills</option>
+                 <option value="region">Dammeron Valley</option>
+                 <option value="region">Veyo</option>
+                 <option value="region">Brookside</option>
+                </select>
+                  
+                  
+             </label>
+         
+             <label class="top">User in Danger Level  </label>
+              <label class="sbs"><input type="radio" name="danger"  value="yes">Yes</label>
+         <label class="sbs"><input type="radio" name="danger"  value="maybe">Maybe</label>
+         <label class="sbs"><input type="radio" name="danger"  value="No">No</label>
+          
+             
+         </fieldset>
+        
+         <input type="submit" value = "Report Weather Event" class="submitBtn">
+    
+    
+    
+    </form>   
+
+      
+      </div>
+      
+     </main>
+    
+  <footer>
+    <section class="contact">
+        <ul style="list-style-type:none">
+      <li>Sunny Days</li>
+     <li>435.592.3899</li>
+      <li>123 Main St.</li> 
+      <li>Diamond Valley, UT 84770</li>
+      <li>Google Map</li>
+        </ul>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Sunny Days | <span id="currentdate">Current Date Placeholder</span>
+    </section>
+  </footer>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+<script>
+//remember to add an ID of "mainmenu
+var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF=urlArray[urlArray.length-1];
+    
+    if(pageHREF !=="") {
+        var menu = document.querySelectorAll('ul#mainmenu li a');
+        var i;
+        
+        for(i=0; i<menu.length; i++) {
+            var currentURL=(menu[i].getAttribute("href"));
+            menu[i].parentNode.className="";
+            if (currentURL===pageHREF) {
+              menu[i].parentNode.className="active";  
+                }       
+        }
+    }
+    </script>    
+</html>
