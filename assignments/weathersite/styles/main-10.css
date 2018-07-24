@@ -6,12 +6,15 @@
 body {
   margin: 3%;
   padding: 0;
-  max-width: 94%;
+  max-width: 90%;
   max-height: 100%;
   text-align: center;
   font-size: 16px;
   line-height: 32px;
-  font-family: 'Lato', sans-serif;  /* Declare the base font-family */
+    
+  /* Declare the base font-family - from google font api or other */
+  font-family: 'Lato', sans-serif; 
+  font-weight: 300;  
   color:#000000;
 }
 
@@ -22,7 +25,7 @@ header, main, nav , footer { /* the comma between the selectors means apply the 
 }
  
 header, footer, footer a {
-    margin: 0.2rem;    
+    color: black;
 } 
 
 .logo {
@@ -101,7 +104,7 @@ nav ul li a {
     display: block;
     color: #DFDCE3;
     text-decoration: none;
-    padding: .8rem 2%;
+    padding: 0.5rem 0;
     border-top: 1px solid rgba(0,0,0,0.3);
     text-align: left;
     
@@ -109,6 +112,7 @@ nav ul li a {
 nav ul li.active a {
     background-color: rgba(0,0,0,0.2);
     color: #fff;
+    background: linear-gradient(#FC4A1A 0%, #F7B733 100%);
 }
 nav ul li a:hover {
     background-color: rgba(0,0,0,0.4);     
@@ -120,7 +124,7 @@ nav ul.hide  {
     display:none;
 }
 
-nav ul li.active a {background: linear-gradient(#FC4A1A 0%, #F7B733 100%); }
+/* Main */
 
 main {
     display: block;
@@ -129,17 +133,19 @@ main {
     text-align: center;
 }
 main figure {
-    margin: 0 0 .2rem 2%;
-    
+    margin: 0 0 .2rem 2%;   
 }
  
 }
-main figure img{ 
+main figure .photofullwidth { 
     width: 100%;
     }
+main figure figcaption { font-weight: 600; }
+
 section.weather-summary {
     border-style: solid;
     border-width: : medium;
+    font-weight: 600;
 }
 section.forecast {
     display: none;
@@ -149,13 +155,28 @@ article {
     width: auto;
     overflow: hidden;
     margin-top: 1.0rem;
-    
+    }
+
+
+article p.town-article {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    float: left;
+    width: auto; /* fill the page in the small/phone view */
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+article p.town-article img{
+    float: right;
+    width: 35%;
+    margin-top: -1.0rem;
+    margin-bottom: 1.0rem;   
 }
 
 .windchill {margin: 1rem;}
 .form {background-color:#bbb; padding: 1rem; border:1px solid #444;}
 div {background-color:#eee; padding: 1rem; border:1px solid #444;}
 #aNum {border:1px solid #bbeedd; background-color:#F7B733; text-align:center;}
+
+/*  Weather Gallery Grid  */
 
 div.weatherGallery{
         padding: 0 2%;
@@ -233,22 +254,21 @@ form label.top inpup:required:valid {
     border-left: green solid 6px;
 }
 
+/* Define the grid for the home page city data */
 
 section.cityfacts {
     display: grid;
     grid-template-columns: auto;
     padding: 0 2%;
-    
+    list-style-type: none;
+     
 }
 section.cityfacts ul {
     list-style-type: none;
+    text-align: left;
+    font-weight: 700;
     
 }
-
-
-
-
-
 
 
 footer {
@@ -269,6 +289,8 @@ footer {
     
 }
 
+
+/* Other Class Selectors */
 .clearfix:after{
     content: "";
     display: table;

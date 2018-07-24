@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en-us">
- <head> 
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sunny Days</title> 
-    <meta name="description" content="Franklin Weather page for Brad Simmons in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+<head> 
+<meta charset="utf-8">
+    
+<title>Sunny Days</title>
+    
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="author" content="Brad Simmons">
+<meta name="description" content="CIT-230 Sunny Days Home Page">
+    
+<!-- *************** LOAD A GOOGLE FONT ****************** -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    
+<!-- STYLE SHEETS -->   
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main-10.css">
     <link rel="stylesheet" href="styles/medium-10.css">
     <link rel="stylesheet" href="styles/large-10.css"> 
      
-    <script src="scripts/responsiveMenu.js" defer></script>
+     
  </head>
-  <body>
-   <header>
+<body>
+   <header includefile="header.html">
      <picture>
      <img src="images/weathericon.png" width="60" height="60" class="logo" alt="Weather Icon"> 
      </picture>
@@ -40,20 +48,20 @@
        
   <main>
     <br>
-    <h3>Franklin</h3>
+    <h1>Home</h1>
     <figure class="photofullwidth">
     <img src="images/franklin-l.jpg" alt="Landscape" sizes="100vw" srcset="images/franklin-s.jpg 600w,images/franklin-m.jpg 800w,images/franklin-l.jpg 1200w"> 
+    <figcaption>Beautiful</figcaption>
     </figure>
     <section class="cityfacts">
     
     </section>
       
-      <script src="scripts/loadjson.js" defer></script>
+      
     
-      <p id="return-link"><a href="../index.html">Return To Portal</a></p>
+     <p id="return-link"><a href="/index.html">Return To Portal</a></p>
       
     	  
-  
   </main>
     
   <footer>
@@ -69,26 +77,9 @@
     <section class="footer-bar">&copy;2018 | All Rights Reserved | Sunny Days | <span id="currentdate">Current Date Placeholder</span>
     </section>
   </footer>
-  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/scripts.js" ></script> 
+  <script src="scripts/loadjson.js" defer></script>
+  <script src="scripts/currentdate.js" defer></script>
 
 </body>
-<script>
-//remember to add an ID of "mainmenu
-var urlString = document.location.href;
-    var urlArray = urlString.split('/');
-    var pageHREF=urlArray[urlArray.length-1];
-    
-    if(pageHREF !=="") {
-        var menu = document.querySelectorAll('ul#mainmenu li a');
-        var i;
-        
-        for(i=0; i<menu.length; i++) {
-            var currentURL=(menu[i].getAttribute("href"));
-            menu[i].parentNode.className="";
-            if (currentURL===pageHREF) {
-              menu[i].parentNode.className="active";  
-                }       
-        }
-    }
-    </script>    
-    </html>
+</html>

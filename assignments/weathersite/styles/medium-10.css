@@ -4,11 +4,12 @@
     
     nav button { 
         display:none; 
-    } 
+    } /* hamburger button does not need to be shown */
+    
     nav ul.hide {
     display:flex;
     }
-    /* hamburger button does not need to be shown in the medium on up views */
+    
     nav ul {
         margin-left: 2%;
         border-left: 1px solid rgba(0,0,0,0.3);
@@ -24,7 +25,12 @@
          border-bottom: none;
     }
      
-    section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
+    section.forecast {
+      display: flex; 
+      flex-flow: column nowrap;
+      align-items: center; 
+    
+    }  /* show the 10-day forecast with the medium view and up */
 
     article p.town-article img {
         width: 60%;
@@ -33,6 +39,11 @@
      
     
     div.weatherGallery {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
+    }
+    
+     section.cityfacts {
         grid-template-columns: 1fr 1fr;
         grid-gap: 2%;
     }
