@@ -1,5 +1,5 @@
 var section = document.querySelector('section');
-var requestURL = 'https://bmograt.github.io/assignments/mountainspoke/bikemodels.json';
+var requestURL = 'https://bmograt.github.io/bikemodels.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
