@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-us">
- <head> 
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Weather Gallery</title> 
-    <meta name="description" content="Weather Gallery Pictures">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+<head> 
+<meta charset="utf-8">
+    
+<title>The Mountain Spoke</title>
+    
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="author" content="Brad Simmons">
+<meta name="description" content="CIT-230 The Mountain Spoke Home Page">
+    
+<!-- *************** LOAD A GOOGLE FONT ****************** -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+<!-- STYLE SHEETS -->   
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main-10.css">
-    <link rel="stylesheet" href="styles/medium-10.css">
-    <link rel="stylesheet" href="styles/large-10.css"> 
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css"> 
      
-    <script src="scripts/responsiveMenu.js" defer></script>
+     
  </head>
-  <body>
-   <header>
+<body>
+   <header includefile="header.html">
      <picture>
-     <img src="images/weathericon.png" width="60" height="60" class="logo" alt="Weather Icon"> 
+     <img src="images/spokelogo.png"  class="logo" alt="spoke logo"> 
      </picture>
+       
      <div class="subheading">
-     <h1>Sunny Days</h1>
+     <h1>The Mountain Spoke</h1>
      <h2>Your Local Source</h2>
      </div>   
     
@@ -28,50 +38,41 @@
   <nav class="clearfix"> 
       <button onclick="toggleNavMenu()">&#9776;</button>
     <ul id="mainmenu" class="hide">
-    	<li><a href="index.html">Home&nbsp;|</a></li>
-    	<li><a href="franklin.html">Franklin&nbsp;|</a></li>
-    	<li><a href="greenville.html">Greenville&nbsp;|</a></li>
-    	<li><a href="springfield.html">Springfield &nbsp;|</a></li>
-    	<li><a href="stormcenter.html">Storm Center&nbsp;|</a></li>
-    	<li><a href="gallery.html">Gallery&nbsp;|</a></li>
+    	<li><a href="mountainspoke.html">Home&nbsp;|</a></li>
+        <li><a href="models.html">Models&nbsp;|</a></li>
+    	<li><a href="adventuretours.html">Adventure Tours&nbsp;|</a></li>
+    	<li><a href="events.html">Events&nbsp;|</a></li>
+    	<li><a href="service.html">Service &nbsp;|</a></li>
+    	<li><a href="contact.html">Contact&nbsp;|</a></li>
+    	
     </ul>		
   </nav>
        
   <main>
     <br>
-    <h1>Gallery</h1>
+    <h1>Models</h1>
     <div class="weatherGallery">  
     <figure>
-    <img src="images/weather-1.jpeg" alt="W1">
-        <figcaption>A Cloudy Day in Diamond Valley</figcaption>
+    <img src="images/santacruz.jpg" alt="W1">
+        <figcaption>Santa Cruz Baller</figcaption>
+        <p>$1,798 &nbsp;      avail in Baby Blue, Steele</p>
     </figure>  
         
      <figure>
-    <img src="images/weather-2.jpeg" alt="W2">
-        <figcaption>The Sun is Trying to come through</figcaption>
+    <img src="images/santacruzdemon.jpg" alt="W2">
+        <figcaption>Santa Cruz Demon</figcaption>
+         <p>$2,700 &nbsp;      avail in seafoam, Granite</p>
     </figure> 
         
      <figure>
-    <img src="images/weather-3.jpeg" alt="W3">
-        <figcaption>A Sunny Day in Diamond Valley</figcaption>
+    <img src="images/pivot.jpg" alt="W3">
+        <figcaption>Pivot Firebird</figcaption>
+        <p>$1,898 &nbsp;      avail in Blue Star, White Out</p> 
+         
     </figure> 
         
-     <figure>
-    <img src="images/weather-4.jpeg" alt="W4">
-        <figcaption>A Clear Day in Diamond Valley</figcaption>
-    </figure>  
-        
-     <figure>
-    <img src="images/weather-5.jpeg" alt="mountain sun">
-        <figcaption>Clear Skies in Diamond Valley</figcaption>
-    </figure>  
-        
-     <figure>
-    <img src="images/weather-6.jpeg" alt="mountain sun">
-        <figcaption>A Beautiful Day in Diamond Valley</figcaption>
-    </figure>      
-      
-      </div>
+    </div>
+
       
      </main>
     
