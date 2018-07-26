@@ -29,9 +29,9 @@ function showCitydata(jsonObj) {
         myH2.textContent = cities[i].name;
         myH3.textContent = 'Model: ' + cities[i].motto;
         myPara1.textContent = 'Price: ' + cities[i].yearFounded;
-        myPara2.textContent = 'Population: ' + cities[i].currentPopulation;
-        myPara2.textContent = 'Average Rainfall: ' + cities[i].averageRainfall;
-        myPara4.textContent = 'Upcoming Events:';
+        myPara2.textContent = 'Type: ' + cities[i].currentPopulation;
+        myPara2.textContent = 'Weight: ' + cities[i].averageRainfall;
+        myPara4.textContent = 'image:';
         
         var cityEvents = cities[i].events;
         for (var j = 0; j < cityEvents.length; j++) {
