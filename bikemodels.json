@@ -2,15 +2,13 @@
   "towns" : [
   {
     "name": "Pivot ",
-    "motto": "The All New Firebird 29",
-    "yearFounded": 1788,
-    "currentPopulation": 30458,
-    "averageRainfall": 21,
-    "events" : [
-      "March 4: March to the Drum of Donuts",
-      "September 5 - 11: Founder Days",
-      "December 1 - 26: Christmas in the Heart"
-    ]
+    "model": "The All New Firebird 29",
+    "price": 1788,
+    "type": enduro,
+    "weight": 21 lbs,
+    "image" : <img src="assignments/mountainspoke/images/safe_image.jpg" alt="downhillrecord">
+     
+    
   },
   {
     "name": "Greenville",
