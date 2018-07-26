@@ -2,13 +2,13 @@
   "towns" : [
   {
     "name": "Pivot ",
-    "model": "The All New Firebird 29",
-    "price": 1788,
-    "type": enduro,
-    "weight": 21 lbs,
-    "image" : <img src="assignments/mountainspoke/images/safe_image.jpg" alt="downhillrecord">
-     
-    
+    "motto": "The All New Firebird 29",
+    "yearFounded": 1788,
+    "currentPopulation": enduro,
+    "averageRainfall": 21 lbs,
+    "events" : [
+       ]
+      
   },
   {
     "name": "Greenville",

@@ -1,5 +1,5 @@
 var section = document.querySelector('section');
-var requestURL = 'https://bmograt.github.io/bikemodels.json';
+var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -27,11 +27,11 @@ function showCitydata(jsonObj) {
         var myList = document.createElement('ul');
         
         myH2.textContent = cities[i].name;
-        myH3.textContent = 'Model: ' + cities[i].model;
-        myPara1.textContent = 'Price: ' + cities[i].price;
-        myPara2.textContent = 'Type: ' + cities[i].type;
-        myPara2.textContent = 'Weight: ' + cities[i].weight;
-        myPara4.textContent = 'Image: ' + cities[i].image;
+        myH3.textContent = 'Mott: ' + cities[i].motto;
+        myPara1.textContent = 'Year Founded: ' + cities[i].yearFounded;
+        myPara2.textContent = 'Population: ' + cities[i].currentPopulation;
+        myPara2.textContent = 'Average Rainfall: ' + cities[i].averageRainfall;
+        myPara4.textContent = 'Upcoming Events:';
         
         var cityEvents = cities[i].events;
         for (var j = 0; j < cityEvents.length; j++) {
