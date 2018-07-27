@@ -27,8 +27,8 @@ function showCitydata(jsonObj) {
         var myList = document.createElement('ul');
         
         myH2.textContent = cities[i].name;
-        myH3.textContent = 'Brand: ' + cities[i].motto;
-        myPara1.textContent = 'Model: ' + cities[i].yearFounded;
+        myH3.textContent = 'Model: ' + cities[i].motto;
+        myPara1.textContent = 'Price $:' + cities[i].yearFounded;
         myPara2.textContent = 'Avail Colors: ' + cities[i].currentPopulation;
         myPara2.textContent = 'Avail Sizes: ' + cities[i].averageRainfall;
         myPara4.textContent = 'Upcoming Test Rides:';
