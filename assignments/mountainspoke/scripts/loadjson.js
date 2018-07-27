@@ -27,11 +27,11 @@ function showCitydata(jsonObj) {
         var myList = document.createElement('ul');
         
         myH2.textContent = cities[i].name;
-        myH3.textContent = 'Motto: ' + cities[i].motto;
-        myPara1.textContent = 'Year Founded: ' + cities[i].yearFounded;
-        myPara2.textContent = 'Population: ' + cities[i].currentPopulation;
-        myPara2.textContent = 'Average Rainfall: ' + cities[i].averageRainfall;
-        myPara4.textContent = 'Upcoming Events:';
+        myH3.textContent = 'Brand: ' + cities[i].motto;
+        myPara1.textContent = 'Model: ' + cities[i].yearFounded;
+        myPara2.textContent = 'Avail Colors: ' + cities[i].currentPopulation;
+        myPara2.textContent = 'Avail Sizes: ' + cities[i].averageRainfall;
+        myPara4.textContent = 'Upcoming Test Rides:';
         
         var cityEvents = cities[i].events;
         for (var j = 0; j < cityEvents.length; j++) {
