@@ -3,16 +3,16 @@
 <head> 
 <meta charset="utf-8">
     
-<title>The Mountain Spoke</title>
+<title>Bike Models</title>
     
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="author" content="Brad Simmons">
-<meta name="description" content="CIT-230 The Mountain Spoke Home Page">
+<meta name="description" content="CIT-230 The Mountain Spoke Bike Models Page">
     
 <!-- *************** LOAD A GOOGLE FONT ****************** -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     
 <!-- STYLE SHEETS -->   
     <link rel="stylesheet" href="styles/normalize.css">
@@ -55,19 +55,19 @@
     <figure>
     <img src="images/santacruz.jpg" alt="W1">
         <figcaption>Santa Cruz Baller</figcaption>
-        <p>$1,798 &nbsp;      avail in Baby Blue, Steele</p>
+        <p>$1,798 &nbsp;      avail in Baby Blue, Steele<br> Sizes: XL, L, M, S</p>
     </figure>  
         
      <figure>
     <img src="images/santacruzdemon.jpg" alt="W2">
         <figcaption>Santa Cruz Demon</figcaption>
-         <p>$2,700 &nbsp;      avail in Seafoam, Granite</p>
+         <p>$2,700 &nbsp;      avail in Seafoam, Granite<br> Sizes: XL, L, M, S</p>
     </figure> 
         
      <figure>
     <img src="images/pivot.jpg" alt="W3">
         <figcaption>Pivot Firebird</figcaption>
-        <p>$1,898 &nbsp;      avail in Blue Star, White Out</p> 
+        <p>$1,898 &nbsp;      avail in Blue Star, White Out<br> Sizes: XL, L, M</p> 
          
     </figure> 
         
@@ -79,36 +79,19 @@
   <footer>
     <section class="contact">
         <ul style="list-style-type:none">
-      <li>Sunny Days</li>
+      <li>The Mountain Spoke</li>
       <li>435.592.3899</li>
-      <li>123 Main St.</li> 
-      <li>Diamond Valley, UT 84770</li>
-      <li>Google Map</li>
+      <li>3950 Valley Commons Drive</li> 
+      <li>Bozeman, MT 59715</li>
+      
         </ul>
     </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | Sunny Days | <span id="currentdate">Current Date Placeholder</span>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span>
     </section>
   </footer>
-  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/scripts.js" ></script> 
+  <script src="scripts/loadjson.js" defer></script>
+  <script src="scripts/currentdate.js" defer></script>
 
 </body>
-<script>
-//remember to add an ID of "mainmenu
-var urlString = document.location.href;
-    var urlArray = urlString.split('/');
-    var pageHREF=urlArray[urlArray.length-1];
-    
-    if(pageHREF !=="") {
-        var menu = document.querySelectorAll('ul#mainmenu li a');
-        var i;
-        
-        for(i=0; i<menu.length; i++) {
-            var currentURL=(menu[i].getAttribute("href"));
-            menu[i].parentNode.className="";
-            if (currentURL===pageHREF) {
-              menu[i].parentNode.className="active";  
-                }       
-        }
-    }
-    </script>    
 </html>

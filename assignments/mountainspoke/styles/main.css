@@ -37,20 +37,14 @@ header, footer, footer a {
 
 header .subheading {
     display:flex;
-    flex-flow:column nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     
 }
-
-.diamondvalley {
-  width: 100%;
-  height: auto;
-  margin: 0 0 1em 1em; 
-}
-
+ 
 header {
     font-size: 16px;
-    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif; 
+    font-family: 'Roboto', sans-serif;
     margin: 0 0 1em 1em; 
     text-align: left;
 }
@@ -69,9 +63,18 @@ header h2, strong {
 }
 h3, strong {
      
-    margin-left:auto; 
+    margin-left:20px; 
     color: #FC4A1A;
-    font-size: 25px;      
+    font-size: 25px;
+    text-align: left;
+}
+
+h4, strong {
+     
+    margin-right:20px; 
+    color: #FC4A1A;
+    font-size: 25px;
+    text-align: right;
 }
 
 nav {
@@ -158,18 +161,32 @@ article {
     }
 
 
-article p.downhill-article {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+article p.dark-article {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     float: left;
     width: auto; /* fill the page in the small/phone view */
-    margin-left: 0.25rem;
+  margin-left: 0.25rem;
     margin-right: 0.25rem;
 }
-article p.downhill-article img{
+article p.dark-article img{
     float: right;
     width: 35%;
     margin-top: -1.0rem;
     margin-bottom: 1.0rem;   
 }
+
+article p.left-article {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  float: right;
+    width: auto; /* fill the page in the small/phone view */
+  margin-left: 0.25rem;
+    margin-right: 0.25rem; 
+}
+article p.left-article img{
+    float: left;
+    width: 35%;
+    margin-top: -1.0rem;
+    margin-bottom: 1.0rem;   
+}
+
 
 .windchill {margin: 1rem;}
 .form {background-color:#bbb; padding: 1rem; border:1px solid #444;}
@@ -296,3 +313,70 @@ footer {
     display: table;
     clear: both;
 }
+
+.continental {
+ list-style-type: none;   
+   text-decoration: none;  
+}
+
+/* Table CSS */
+/*body {
+    text-align: center;
+}
+
+main {
+    width: 300px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px grey;
+    margin: auto;
+}
+*/
+table, tr, th, td {
+    font-family: Ubuntu, sans-serif;
+    padding: 10px;
+    border: 1px solid;
+    border-color: gray;
+}
+
+table  {
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px #7395AE;
+    text-align: center;
+    width: 280px;
+    margin:auto;
+}
+
+tr:nth-child(odd)  {
+    background-color: #e7f0ed;
+    
+}
+
+tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+tr:nth-child(1), .highsales {
+    background-color:#F7B733;
+    color: white;
+}
+
+thead>tr>th  {
+    color: #000000;
+    background-color: #DFDCE3;
+    font size: 1.2em;
+    font-weight: 700;
+    padding: 10px 5px;    
+}
+
+tfoot>tr>td {
+    background-color: #9c2c13;
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+}
+
+}
+ 
